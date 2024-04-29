@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>这次吃什么</title>
+</head>
+<style>
+	p{
+		cursor: pointer;
+	}
+	h1{
+		cursor: pointer;
+		color: blue;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	body{
+		display: flex;
+		flex-direction: column;
+	}
+	button{
+		height: 10vh;
+		font-size: xx-large;
+	}
+	input{
+		height: 10vh;
+		font-size: xx-large;
+	}
+	#first{
+		display: flex;
+		justify-content: center;
+	}
+</style>
+<script>
+	let zccsm_list = window.localStorage.getItem("zccsm-list");
+	let zccsm;
+	if(zccsm_list == null||zccsm_list == undefined||JSON.parse(zccsm_list).length==0){
+		zccsm = ["尝试新美食吧"];
+		window.localStorage.setItem("zccsm-list",JSON.stringify(zccsm));
+	}else{
+		zccsm = JSON.parse(zccsm_list);
+	}
+	function remove(idx){
+		if(idx==0){
+			return;
+		}
+		if(confirm("确定要移除 "+zccsm[idx]+"吗？")){
+			zccsm.splice(idx,1);
+			window.localStorage.setItem("zccsm-list",JSON.stringify(zccsm));
+			window.location.reload();
+		}
+	}
+	function appendEle(index, content){
+		let list = document.getElementById("zccsm-list");
+		let item = document.createElement("p");
+		item.innerText = content;
+		item.id=""+index;
+		let bh = remove.bind(null,index);
+		item.addEventListener("click",bh);
+		list.insertBefore(item,list.firstChild);
+	}
+	function add(){
+		ms = document.getElementById("input-ms").value;
+		if(ms == null||ms == undefined||ms.trim().length == 0){
+			return;
+		}
+		ms = ms.trim();
+		zccsm.push(ms);
+		window.localStorage.setItem("zccsm-list",JSON.stringify(zccsm));
+		appendEle(zccsm.length-1,ms);
+	}
+	function choose() {
+		let randomIndex = Math.floor(Math.random() * zccsm.length);
+		let c = zccsm[randomIndex];
+		document.getElementById("cho").innerText=c;
+	}
+	window.onload = function(){
+		let list = document.getElementById("zccsm-list");
+		let index = 0;
+		for (const it of zccsm) {
+			if(index==0){
+				index++;
+				continue;
+			}
+			appendEle(index,it);
+			index++;
+		}
+	}
+</script>
+<body>
+	<div id="first">
+
+<h1 id="cho" onclick="choose()">点击生成</h1>
+	</div>
+<hr>
+<div id="zccsm-list"></div>
+<input type="text" id="input-ms"/>
+<button onclick="add()">添加</button>
+<button onclick="window.localStorage.clear();window.location.reload();">清除所有</button>
+</body>
+</html>
