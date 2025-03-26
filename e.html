@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视力自测</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    --bgc: white;
+    --fc: black;
+    background-color: var(--bgc);
+}
+h1{
+    color: var(--fc);
+}
+.main{
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.e{
+    width: 100px;
+    height: 100px;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--fc);
+    margin: 20px;
+}
+.eh{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.e div{
+    width: 20%;
+    height: 20%;
+}
+.ew{
+    background-color: var(--bgc);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+</style></head>
+
+<body id="bodyy" style="overflow-x: hidden;">
+    <div class="main">
+        <h1 id="button1">L/V</h1>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <div class="eh"></div>
+        <h1 id="button2">size</h1>
+    </div>
+    <div class="main" id="_46">
+        <h1>4.6/0.4</h1>
+        <div class="e" style="transform: scale(0.83) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.83) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>18.27mm</h1>
+    </div>
+    <div class="main" id="_47">
+        <h1>4.7/0.5</h1>
+        <div class="e" style="transform: scale(0.66) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.66) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>14.51mm</h1>
+    </div>
+    <div class="main" id="_48">
+        <h1>4.8/0.6</h1>
+        <div class="e" style="transform: scale(0.52) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.52) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>11.53mm</h1>
+    </div>
+    <div class="main" id="_49">
+        <h1>4.9/0.8</h1>
+        <div class="e" style="transform: scale(0.41) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.41) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>9.16mm</h1>
+    </div>
+    <div class="main" id="_50">
+        <h1>5.0/1.0</h1>
+        <div class="e" style="transform: scale(0.33) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.33) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>7.27mm</h1>
+    </div>
+    <div class="main" id="_51">
+        <h1>5.1/1.2</h1>
+        <div class="e" style="transform: scale(0.26) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.26) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>5.78mm</h1>
+    </div>
+    <div class="main" id="_52">
+        <h1>5.2/1.5</h1>
+        <div class="e" style="transform: scale(0.21) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.21) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>4.59mm</h1>
+    </div>
+    <div class="main" id="_53">
+        <h1>5.3/2.0</h1>
+        <div class="e" style="transform: scale(0.17) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(180deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(0deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(270deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <div class="e" style="transform: scale(0.17) rotate(90deg);">
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+            <div></div><div class="ew"></div><div class="ew"></div><div class="ew"></div><div class="ew"></div>
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+        <h1>3.64mm</h1>
+    </div>
+    <div style="height: 40vh;padding: 100px;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>左侧为视力5分记录 L/小数记录 V（略值），右侧数字为该行视标应当在屏幕上的大小<br>使用方法：借助直尺，缩放屏幕将视标边长调整到与右侧数值相等的长度，而后离屏幕5m处测试</h1>
+    </div>
+
+<script>
+    window.onload=function(){
+        let arr = document.querySelectorAll("#_46 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.83) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_47 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.66) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_48 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.52) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_49 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.41) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_50 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.33) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_51 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.26) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_52 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.21) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        arr = document.querySelectorAll("#_53 .e");
+        for(let i=0;i<arr.length;i++){
+            let r=Math.floor(Math.random()*4)*90;
+            let str=`scale(0.17) rotate(${r}deg)`;
+            arr[i].style.transform=str;
+        }
+        document.getElementById("button1").onclick = function(){
+            document.getElementById("bodyy").style.setProperty('--bgc', 'black');
+            document.getElementById("bodyy").style.setProperty('--fc', 'white');
+        }
+        document.getElementById("button2").onclick = function(){
+            document.getElementById("bodyy").style.setProperty('--bgc', 'white');
+            document.getElementById("bodyy").style.setProperty('--fc', 'black');
+        }
+    }
+</script>
+</body></html>
